@@ -32,7 +32,7 @@ class ApplicationController < Sinatra::Base
     search_response.to_json
   end 
 
-     #returns a list of all the pets in the database
+     #returns a list of all the pets in the database on the screen
      get "/pets"  do
       all_pets = Pet.all
       all_pets.to_json
